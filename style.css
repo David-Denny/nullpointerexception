@@ -1,0 +1,25 @@
+body {
+	background-color: #D7CEC7;
+}
+
+.top { /* move the first div containing the logo and login down to provide a margin */
+	
+	
+}
+.btn-colour {
+	background: #0b3c5d;
+	color: #ffffff !important;
+	border: 
+}
+
+.btn-colour:hover {
+	background: #696969;
+	color: #ffffff !important;
+	border-style: solid;
+	border-color: #696969;
+}
+
+.btn-colour:active {
+	position:relative;
+	top: 2px;
+}
