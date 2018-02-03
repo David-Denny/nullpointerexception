@@ -1,3 +1,7 @@
+body {
+	background-color: #ffffff;
+}
+
 /* move the first div containing the logo and login down to provide a margin */
 .top { 
 	margin-top: 30px;
