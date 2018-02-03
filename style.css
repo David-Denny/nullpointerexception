@@ -1,8 +1,5 @@
-body {
-	background-color: #D7CEC7;
-}
-
-.top { /* move the first div containing the logo and login down to provide a margin */
+/* move the first div containing the logo and login down to provide a margin */
+.top { 
 	margin-top: 30px;
 	margin-bottom: 30px;
 	
@@ -27,3 +24,34 @@ body {
 	top: 2px;
 }
 
+/* helps scale image for mobile screens */
+img {
+	max-width: 100%;
+	border-radius: 5%;
+}
+
+.title {
+	font-family: "Book Antiqua", Palatino, "Palatino Linotype", Georgia, serif;
+	padding: 15px;
+	color: #0b3c5d;
+}
+
+/* Main content of page */
+#about-us {
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+	position: relative;
+	top: 4em;
+}
+
+.go-right {
+	float: right;
+}
+
+
+.image-tag {
+	font-style: italic;
+	font-size: 0.8e;
+	text-align: center;
+	max-width: 500px; /* required because the text didn't match up to the image */ 
+}
