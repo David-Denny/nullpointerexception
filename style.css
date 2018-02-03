@@ -34,13 +34,13 @@ img {
 	border-radius: 5%;
 }
 
+/* Main content of page */
 .title {
 	font-family: "Book Antiqua", Palatino, "Palatino Linotype", Georgia, serif;
-	padding: 15px;
+	margin: 1em;
 	color: #0b3c5d;
 }
 
-/* Main content of page */
 #about-us {
 	font-family: "Roboto", sans-serif;
 	font-size: 20px;
@@ -57,5 +57,20 @@ img {
 	font-style: italic;
 	font-size: 0.8e;
 	text-align: center;
-	max-width: 500px; /* required because the text didn't match up to the image */ 
+	float: right;		/* next two lines are required to align text with image above */
+	max-width: 500px; 
+}
+
+/* CSS for the table containing the questions */
+.table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+.table .ten {
+	width: 10%;
+}
+
+.table .eighty {
+	width: 80%;
 }
