@@ -2,6 +2,7 @@ body {
 	background-color: #ffffff !important;
 }
 
+/* CSS for homepage */
 /* move the first div containing the logo and login down to provide a margin */
 .top { 
 	margin-top: 30px;
@@ -57,11 +58,16 @@ img {
 	font-style: italic;
 	font-size: 0.8e;
 	text-align: center;
-	float: right;		/* next two lines are required to align text with image above */
+	float: right;		/* two lines are required to align text with image above */
 	max-width: 500px; 
 }
 
 /* CSS for the table containing the questions */
+
+#table-title {
+	font-family: "Book Antiqua", Palatino, "Palatino Linotype", Georgia, serif;
+	margin-top: 1.25em
+}
 .table {
 	table-layout: fixed;
 	width: 100%;
@@ -73,4 +79,30 @@ img {
 
 .table .eighty {
 	width: 80%;
+}
+
+td {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.1em
+}
+
+.table-home {
+	margin-top: 2em
+}
+
+.table-text {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.1em;
+	
+}
+
+a {
+	color: inherit;
+}
+
+/* CSS for questions page  */
+
+#page-title {
+	font-family: "Book Antiqua", Palatino, "Palatino Linotype", Georgia, serif;
+	text-align: center;
 }
