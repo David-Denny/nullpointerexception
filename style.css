@@ -11,10 +11,10 @@ body {
 }
 
 /* button customisation */
+
 .btn-colour {
 	background: #0b3c5d;
 	color: #ffffff !important;
-	border: 
 }
 
 .btn-colour:hover {
@@ -28,6 +28,7 @@ body {
 	position:relative;
 	top: 2px;
 }
+
 
 /* helps scale image for mobile screens */
 img {

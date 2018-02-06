@@ -10,7 +10,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="addQuestion.js"></script>
-
 		
 		<title>NullPointerException</title>
 	</head>
@@ -79,6 +78,7 @@
 				
 					<button type="submit" class="btn btn-default">Submit</button>
 				</form>
+				
 			</div>
 		</section>
 		
@@ -92,15 +92,16 @@
 				</div>
 
 				<div class="table-responsive">
-					<table class="table table-hover table-bordered table-home">
+					<table id="questionTable" class="table table-hover table-bordered table-home">
 						<thead>
 							<tr>
 								<th class="ten">Score</th>
 								<th class="eighty">Question Title</th>
 								<th class="ten">Answers</th>
 							</tr>
-							
-
+						</thead>
+						
+						<tbody>
 							<tr>
 								<td>0</td>
 								<td>
@@ -110,7 +111,7 @@
 								</td>
 								<td>2</td>
 							</tr>
-						</thead>
+						</tbody>
 					</table>
 				</div>
 			</div>
