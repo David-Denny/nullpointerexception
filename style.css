@@ -5,12 +5,18 @@ body {
 /* CSS for homepage */
 /* move the first div containing the logo and login down to provide a margin */
 .top { 
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 3em;
+	margin-bottom: 3em;
 	
 }
 
 /* button customisation */
+
+@media(max-width: 768px) {
+	.btn-scale {
+		font-size: 11px;
+	}
+}
 
 .btn-colour {
 	background: #0b3c5d;
@@ -45,9 +51,9 @@ img {
 
 #about-us {
 	font-family: "Roboto", sans-serif;
-	font-size: 20px;
+	font-size: 1.25em;
 	position: relative;
-	top: 4em;
+	top: 3em;
 }
 
 .go-right {
@@ -57,7 +63,7 @@ img {
 
 .image-tag {
 	font-style: italic;
-	font-size: 0.8e;
+	font-size: 1em;
 	text-align: center;
 	float: right;		/* two lines are required to align text with image above */
 	max-width: 500px; 
