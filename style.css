@@ -3,11 +3,12 @@ body {
 }
 
 /* CSS for homepage */
+
 /* move the first div containing the logo and login down to provide a margin */
+
 .top { 
 	margin-top: 3em;
 	margin-bottom: 3em;
-	
 }
 
 /* button customisation */
@@ -47,11 +48,13 @@ img {
 	font-family: "Book Antiqua", Palatino, "Palatino Linotype", Georgia, serif;
 	margin: 1em;
 	color: #0b3c5d;
+	font-size: 2.8vw;
 }
 
 #about-us {
 	font-family: "Roboto", sans-serif;
-	font-size: 1.25em;
+	font-size: 20px;
+	font-size: 1.6vw;
 	position: relative;
 	top: 3em;
 }
@@ -64,16 +67,19 @@ img {
 .image-tag {
 	font-style: italic;
 	font-size: 1em;
+	font-size: 1.1vw;
 	text-align: center;
 	float: right;		/* two lines are required to align text with image above */
 	max-width: 500px; 
 }
 
-/* CSS for the table containing the questions */
+/* Question Table */
 
 #table-title {
 	font-family: "Book Antiqua", Palatino, "Palatino Linotype", Georgia, serif;
-	margin-top: 1.25em
+	margin-top: 1.25em;
+	margin-bottom: 2em;
+	font-size: 1.9vw;
 }
 .table {
 	table-layout: fixed;
@@ -88,20 +94,22 @@ img {
 	width: 80%;
 }
 
-td {
-	font-family: "Roboto", sans-serif;
-	font-size: 1.1em
+th {
+	font-size: 1em;
+	font-size: 1.2vw;
 }
 
-.table-home {
-	margin-top: 2em
+td {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.1em;
+	font-size: 1.15vw;
 }
 
 .table-text {
 	font-family: "Roboto", sans-serif;
 	font-size: 1.1em;
+	font-size: 1.15vw;
 	margin-top: 1.5em;
-	
 }
 
 a {
@@ -113,4 +121,14 @@ a {
 #page-title {
 	font-family: "Book Antiqua", Palatino, "Palatino Linotype", Georgia, serif;
 	text-align: center;
+	font-size: 2vw;
 }
+
+#enter-title, #enter-question, .form-scale {
+	font-size: 1.2vw;
+}
+
+.btn-submit {
+	font-size:  1.2vw;
+}
+
