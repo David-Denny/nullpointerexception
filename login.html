@@ -9,6 +9,7 @@
 		<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
 		<script type="text/javascript" src="addQuestion.js"></script>
 		
 		<title>NullPointerException</title>
@@ -16,7 +17,6 @@
 	
 	<body>
 		<header>
-			
 			<!-- Logo and log in button -->
 			<div class="container top">
 				<div class="row">
@@ -27,6 +27,8 @@
 					</div>
 					
 					<div class="col-xs-6 ">
+						
+						<!-- need to make this button scale properly with device size -->
 						<a href="login.html">
 						<button type="button" style="float: right" class="btn btn-scale btn-colour btn-lg">Log in Here</button>
 						</a>
@@ -60,61 +62,59 @@
 			</div>
 		</header>
 		
-		<!-- Enter questions form -->
-		<section>
-			<div class="container">
-				<div class="row-xs-12">
-					<h3 class="page-title">Have a question? Just fill out the form!</h3>
-				</div>
-			
-				<form id="questionForm">
-					<div class="form-group form-scale">
-						<label for="title">Title:</label>
-						<input type="title" class="form-control form-scale" id="enter-title" placeholder="Enter the title">
-					</div>
-					
-					<div class="form-group form-scale">
-						<label for="question">Question:</label>
-						<textarea class="form-control form-scale" id="enter-question" rows="10" placeholder="Enter your question here"></textarea>
-					</div>
-				
-					<button type="submit" class="btn btn-default btn-submit">Submit</button>
-				</form>
-				
-			</div>
-		</section>
-		
-		<!-- Table with all the questions -->
 		<section>
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-6">
-						<h3 id="table-title">Top Questions:</h3>
+						<p class="page-title spacing blue">
+							Log In
+						</p>
+					</div>
+					<div class="col-xs-6">
+						<p class="page-title spacing blue">
+							Sign Up
+						</p>
 					</div>
 				</div>
+				
+				<div class="row">
+					
+					<!-- Log in form -->
+					<div class="col-xs-6">
+						<form id="login">
+							<div class="form-group form-scale">
+								<label class="add-space"  for="username">Username:</label>
+								<input type="username" class="form-control form-scale" id="enter-username" placeholder="Enter your username">
+							
 
-				<div class="table-responsive">
-					<table id="questionTable" class="table table-hover table-bordered table-home">
-						<thead>
-							<tr>
-								<th class="ten">Score</th>
-								<th class="eighty">Question Title</th>
-								<th class="ten">Answers</th>
-							</tr>
-						</thead>
-						
-						<tbody>
-							<tr>
-								<td>0</td>
-								<td>
-									<a href="#">
-										Quisque fringilla, sapien vel fermentum volutpat, ipsum tellus eleifend arcu.
-									</a>
-								</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
+								<label class="add-space" for="password">Password:</label>
+								<input type="password" class="form-control form-scale add-space" id="enter-password" placeholder="Enter your password">
+							
+								<button id="login-submit" type="submit" class="btn btn-default btn-submit add-space">Submit</button>
+							</div>
+						</form>
+					</div>
+					
+					<!-- Sign up form -->
+					<div class="col-xs-6">
+						<form id="signup">
+							<div class="form-group form-scale">
+								<label class="add-space" for="username">Username:</label>
+								<input type="username" class="form-control form-scale" id="enter-username" placeholder="Set your username">
+							
+								<label class="add-space" for="password">Password:</label>
+								<input type="password" class="form-control form-scale" id="enter-password" placeholder="Enter your password">
+							
+								<label class="add-space" for="password-verify">Verify the password:</label>
+								<input type="password-verify" class="form-control form-scale" id="verify-password" placeholder="Verify your password">
+
+								<label class="add-space" for="email">Email:</label>
+								<input type="email" class="form-control form-scale" id="enter-email" placeholder="Enter your email">
+								
+								<button id="signup-submit" type="submit" class="btn btn-default btn-submit add-space">Submit</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</section>
